@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: latoRegular;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+body{
+    background: #ece9e6;
+    background: -moz-linear-gradient(#2e2b2b, #4e4d4d);
+    background: linear-gradient to right( #555353, #222121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* text-transform: capitalize; */
+    font-family: latoRegular;
+}
+
+.moibileContainer{
+    background-color: #121212;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    padding: 1rem;
+    text-transform: capitalize; 
+}
+
+header input{
+    border: none;
+    background-color:#eee ;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+}
+
+header button{
+    border: none;
+    background-color: transparent;
+    color: #aaa;
+    font-size: 1.3rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+header button:hover{
+    color: rgb(185, 11, 185);
+
+}
+
+.favMealContainer{
+    background-color: rgb(234, 226, 238);
+    padding: 0.25rem 1rem;
+    text-align: center;
+}
+
+.favMeals{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: auto;
+    white-space: nowrap; */
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.favMeals li{
+    position: relative;
+    width: 75px;
+    margin: 5px;
+}
+
+.favMeals li .clear{
+   background-color: transparent;
+   border: none;
+   position: absolute;
+   opacity: 0;
+   top: -0.3rem;
+   right: -0.3rem;
+   font-size: 0.9rem;
+   cursor: pointer;
+  color: purple;
+}
+
+.favMeals li:hover .clear{
+    opacity: 1;
+}
+
+.favMeals li img{
+    border: 2px solid white;
+    box-shadow: 0 0 10px 2px #3333331a;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.favMeals li span{
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+}
+
+.favMeals li:hover span{
+    white-space: normal;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.meal{
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.mealHeader{
+   position: relative;
+}
+
+.mealHeader .random{
+    position: absolute;
+    top: 1.5rem;
+    background-color: #ece9e6;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.mealheader img{
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.mealBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.mealBody h4{
+    color: white;
+    display: inline-block;
+    width: 100px;
+}
+
+.mealBody .favBtn{
+    color: rgb(197, 188, 188);
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.mealBody .showRecipe{
+    color: rgb(197, 188, 188);
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.mealBody .showRecipe:hover{
+    color: rgb(185, 11, 185);
+
+}
+
+.mealBody .favBtn.active{
+    color: rgb(185, 11, 185);
+}
+
+.favMeals .showRecipe{
+    color: rgb(117, 112, 112);
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.favMeals .showRecipe:hover{
+    color: rgb(185, 11, 185);
+}
+
+.mealRecipeContainer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.mealRecipeContainer.hidden{
+    opacity: 0;
+    pointer-events: none;
+    overflow: auto;
+
+}
+
+.mealRecipe{
+    background-color: white;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    max-height: 100vh;
+    padding: 1.2rem 2rem;
+    border-radius: 5px ;
+    overflow: auto;
+}
+
+.mealRecipe h1{
+    text-align: center;
+    padding: 0 0 1rem 0 ;
+    color: purple;
+}
+/* 
+.mealRecipe h4{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: purple;
+} */
+
+.mealRecipe h3{
+    color: purple;
+    padding: 1rem 0 0.7rem 0 ;
+    
+}
+
+.mealRecipe p {
+    padding-top: 0;
+    text-align: justify;
+    word-spacing: 2px;
+    line-height: 1.8;
+}
+
+.mealRecipe ul{
+    padding:0 0 1rem 2rem ;
+    word-spacing: 2px;
+    line-height: 1.8;
+}
+
+.mealRecipe .closePopup{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #121212;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.mealRecipe .closePopup:hover{
+    color: purple;
+}
+

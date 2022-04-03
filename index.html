@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">    
+    <title> recipe app </title>
+</head>
+<body>
+    
+    <div class="moibileContainer">
+        <header>
+              <input type="text" id="searchMeal">
+              <button id="search"> <i class="fas fa-search"></i></button>
+              <button class="clear">
+                <i class="fas fa-redo-alt"></i>
+             </button>
+        </header>
+        <div class="favMealContainer">
+            <h3> favorite meals </h3>
+            <ul class ="favMeals" id="favMeals"></ul>
+        </div>
+        <div class="meals" id="meals">
+        </div>
+    </div>
+
+    <div class="mealRecipeContainer hidden" id="recipePopup">
+       
+        <div id="mealRecipe" class="mealRecipe">
+
+           <button id="closePopup" class="closePopup">
+              <i class="fas fa-times"></i>
+           </button>
+
+        <div class="mealInfo" id="mealInfo">
+        </div>
+
+       </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
