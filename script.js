@@ -52,7 +52,6 @@ async function getMealBySearch(term){
 //----------------------------------------------------- adds random meal -------------------------------------------
 
 function addMeal(mealData, random=false){
-    console.log(mealData)
 
     const meal = document.createElement("div");
     meal.classList.add("meal");
