@@ -186,17 +186,12 @@ searchBtn.addEventListener("click", async function(){
     mealsEl.innerHTML="";
     const search = searchMeal.value;
      const meals = await getMealBySearch(search)
-
+    
     if (meals){
         meals.forEach(function(meal){
          addMeal(meal)
     });
-    
-    }
-    if(searchMeal.value = " "){
-         mealsEl.innerHTML="";
-        getRandomMeal();
-    }
+   } 
 });
 
 btnClose.addEventListener("click", function(){
