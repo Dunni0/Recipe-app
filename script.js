@@ -191,6 +191,7 @@ searchBtn.addEventListener("click", async function(){
         meals.forEach(function(meal){
          addMeal(meal)
     });
+    
     }
     if(searchMeal.value = " "){
          mealsEl.innerHTML="";
