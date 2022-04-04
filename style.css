@@ -17,7 +17,6 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* text-transform: capitalize; */
     font-family: latoRegular;
 }
 
@@ -41,19 +40,31 @@ h3{
     text-transform: capitalize; 
 }
 
+label{
+    position: relative;
+}
+
 header input{
     border: none;
-    background-color:#eee ;
-    border-radius: 3px;
+    background-color: #ece9e6;
+    border-radius: 7px;
     padding: 0.5rem 1rem;
     font-family: inherit;
+}
+
+#search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.3rem;
 }
 
 header button{
     border: none;
     background-color: transparent;
     color: #aaa;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 30px;
     cursor: pointer;
 }
@@ -72,8 +83,6 @@ header button:hover{
 .favMeals{
     display: flex;
     flex-wrap: wrap;
-    /* overflow: auto;
-    white-space: nowrap; */
     justify-content: center;
     list-style-type: none;
     text-align: center;
