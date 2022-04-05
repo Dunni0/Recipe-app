@@ -9,6 +9,11 @@
     src: url(fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Italic.ttf);
+}
+
 body{
     background: #ece9e6;
     background: -moz-linear-gradient(#2e2b2b, #4e4d4d);
@@ -17,6 +22,16 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: latoRegular;
+}
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    color: #ece9e6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 0.7rem;
     font-family: latoRegular;
 }
 
@@ -32,8 +47,13 @@ header{
     padding: 1rem;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
+
 
 h3{
     padding: 1rem;
@@ -64,13 +84,13 @@ header button{
     border: none;
     background-color: transparent;
     color: #aaa;
-    font-size: 1.2rem;
-    margin-left: 30px;
+    font-size: 1rem;
+    margin-left: 43px;
     cursor: pointer;
 }
 
 header button:hover{
-    color: rgb(185, 11, 185);
+    color: #9ba4c9;
 
 }
 
@@ -107,7 +127,7 @@ img{
    right: -0.3rem;
    font-size: 0.9rem;
    cursor: pointer;
-  color: purple;
+   color: #9ba4c9;
 }
 
 .favMeals li:hover .clear{
@@ -198,12 +218,12 @@ img{
 }
 
 .mealBody .showRecipe:hover{
-    color: rgb(185, 11, 185);
+    color: #9ba4c9;
 
 }
 
 .mealBody .favBtn.active{
-    color: rgb(185, 11, 185);
+    color: #9ba4c9;
 }
 
 .favMeals .showRecipe{
@@ -215,7 +235,7 @@ img{
 }
 
 .favMeals .showRecipe:hover{
-    color: rgb(185, 11, 185);
+    color: #9ba4c9;
 }
 
 .mealRecipeContainer{
@@ -251,11 +271,11 @@ img{
 .mealRecipe h1{
     text-align: center;
     padding: 0 0 1rem 0 ;
-    color: purple;
+    color: #9ba4c9;
 }
 
 .mealRecipe h3{
-    color: purple;
+    color: #9ba4c9;
     padding: 1rem 0 0.7rem 0 ;
     
 }
@@ -285,6 +305,63 @@ img{
 }
 
 .mealRecipe .closePopup:hover{
-    color: purple;
+    color: #9ba4c9;
 }
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    word-spacing: 0.2rem;
+    line-height: 1.2;
+}
+
+.appInfo{
+    width: 100%;
+    color: black;
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color: #9ba4c9;
+    cursor: pointer;
+}
+
+.appInfoImage{
+    margin-bottom: 1rem;
+}
+
+.footerImage{
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(pexels-ella-olsson-1640777.jpg); 
+    height: 155px; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 30px;
+    word-spacing: 0.2rem;
+    line-height: 1.2;
+} 
+
+.footerAbout{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1.2rem;
+    font-size: small;
+}
+
+.arrow{
+    display: none;
+    position: fixed;
+    top: 39rem;
+    bottom: 0px;
+    background-color: transparent;
+    border: none;
+    color: #565f86;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+}
+
 

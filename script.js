@@ -61,7 +61,7 @@ function addMeal(mealData, random=false){
         <div class="mealHeader">
                ${random?
                `<span class="random"> random recipe 
-               </span>` :""};
+               </span>` :""}
                <img src="${mealData.strMealThumb}"
                 alt="${mealData.strMeal}"
                 />
@@ -252,4 +252,22 @@ clear.addEventListener("click", function(){
     searchMeal.value="";
 })
 
-     
+//---------------------------------------------------- scroll btn ----------------------------------------------------
+const arrowbtn = document.querySelector(".arrow")
+
+window.onscroll= function(){
+    scrollFunc();
+}
+
+function scrollFunc() {
+    if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+        arrowbtn.style.display = "block";
+    } else{
+        arrowbtn.style.display="none";
+    }
+}
+
+function goToTop(){
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
