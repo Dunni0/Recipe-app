@@ -250,6 +250,8 @@ clear.addEventListener("click", function(){
 
     mealsEl.innerHTML= "";
     searchMeal.value="";
+    
+    goToTop();
 })
 
 //---------------------------------------------------- scroll btn ----------------------------------------------------
@@ -262,7 +264,7 @@ window.onscroll= function(){
 function scrollFunc() {
     if(document.body.scrollTop > 15 || document.documentElement.scrollTop > 15){
         arrowbtn.style.display = "block";
-    } else{
+    } else{hgb
         arrowbtn.style.display= "none";
     }
 }
