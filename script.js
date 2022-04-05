@@ -183,6 +183,7 @@ function addMealToFav(mealData){
 
 // --------------------------------------------------- search -----------------------------------------------------------------
 searchBtn.addEventListener("click", async function(){
+    goToTop();
     mealsEl.innerHTML="";
     const search = searchMeal.value;
      const meals = await getMealBySearch(search)
