@@ -254,18 +254,23 @@ clear.addEventListener("click", function(){
     goToTop();
 })
 
-//---------------------------------------------------- scroll btn ----------------------------------------------------
-const arrowbtn = document.querySelector(".arrow")
+//-------------------------------------------------- back to top scroll func ----------------------------------------------------
 
 window.onscroll= function(){
     scrollFunc();
 }
 
 function scrollFunc() {
+    const btn =  document.querySelector(".clear")
     if(document.body.scrollTop > 15 || document.documentElement.scrollTop > 15){
-        arrowbtn.style.display = "block";
-    } else{hgb
-        arrowbtn.style.display= "none";
+        searchBtn.classList.add("onscroll")
+        btn.innerHTML= `<i class="fas fa-arrow-up"></i>`
+        btn.classList.add("onscroll")
+    } else{
+        
+        btn.classList.remove("onscroll")
+        searchBtn.classList.remove("onscroll")
+        btn.innerHTML= `<i class="fas fa-redo-alt"></i>`
     }
 }
 

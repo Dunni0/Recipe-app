@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: latoRegular;
-    src: url(fonts/Lato-Regular.ttf);
-}
-
-@font-face {
-    font-family: lato;
-    src: url(fonts/Lato-Italic.ttf);
-}
-
 body{
     background: #ece9e6;
     background: -moz-linear-gradient(#2e2b2b, #4e4d4d);
@@ -22,7 +12,8 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    font-family: latoRegular;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .title{
@@ -32,20 +23,18 @@ body{
     font-size: 1.2rem;
     font-weight: bold;
     padding-top: 0.7rem;
-    font-family: latoRegular;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .moibileContainer{
     background-color: #121212;
     box-shadow: 0 0 10px 2px #3333331a;
     border-radius: 10px;
-    /* overflow: hidden; */
     width: 400px;
 }
 
 header{
     padding: 1rem;
-    /* display: flex; */
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -69,7 +58,7 @@ header input{
     border-radius: 7px;
     padding: 0.5rem 1rem;
     font-family: inherit;
-    margin-left: 3rem;
+    margin-left: 3.5rem;
 }
 
 #search{
@@ -90,8 +79,7 @@ header button{
 }
 
 header button:hover{
-    color: #9ba4c9;
-
+    color: #7681ac;
 }
 
 .favMealContainer{
@@ -128,6 +116,10 @@ img{
    font-size: 0.9rem;
    cursor: pointer;
    color: #9ba4c9;
+}
+
+.favMeals li .clear:hover{
+  color: #3a3f53;
 }
 
 .favMeals li:hover .clear{
@@ -218,12 +210,11 @@ img{
 }
 
 .mealBody .showRecipe:hover{
-    color: #9ba4c9;
-
+    color: #3a3f53;
 }
 
 .mealBody .favBtn.active{
-    color: #9ba4c9;
+    color:#3a3f53;
 }
 
 .favMeals .showRecipe{
@@ -235,7 +226,7 @@ img{
 }
 
 .favMeals .showRecipe:hover{
-    color: #9ba4c9;
+    color: #3a3f53;
 }
 
 .mealRecipeContainer{
@@ -352,16 +343,7 @@ img{
     font-size: small;
 }
 
-.arrow{
-    display: none;
-    position: fixed;
-    top: 39rem;
-    bottom: 0px;
-    background-color: transparent;
-    border: none;
-    color: #565f86;
-    padding: 0.6rem;
-    font-size: 1.3rem;
+.onscroll{
+    color: #3a3f53;
 }
-
 
