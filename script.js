@@ -263,7 +263,7 @@ function scrollFunc() {
     if(document.body.scrollTop > 15 || document.documentElement.scrollTop > 15){
         arrowbtn.style.display = "block";
     } else{
-        arrowbtn.style.display="none";
+        arrowbtn.style.display= "none";
     }
 }
 
