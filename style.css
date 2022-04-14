@@ -17,7 +17,7 @@ body{
 
 .container{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-cottonbro-3338497.jpg);
-    width: 400px;
+    width: 380px;
     height: 100%;
     box-shadow: 0 0 10px 2px #3333331a;
     border-radius: 13px 13px 13px 13px;
