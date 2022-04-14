@@ -330,7 +330,7 @@ img{
 }
 
 .footerImage{
-    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(pexels-ella-olsson-1640777.jpg); 
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pexels-ella-olsson-1640777.jpg); 
     height: 155px; 
     width: 100%;
     background-position: center;
