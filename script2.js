@@ -193,6 +193,8 @@ searchBtn.addEventListener("click", async function(){
     if (meals){
         meals.forEach(function(meal){
          addMeal(meal)
+         noMeal.innerHTML="";
+
     });
    } else if(!meals){
        console.log(noMeal)
