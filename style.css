@@ -15,8 +15,8 @@ body{
 
 .container{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-cottonbro-3338497.jpg);
-    width: 400px;
-    height: 90%;
+    width: 420px;
+    height: 100%;
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -53,7 +53,7 @@ button{
     font-size: 1.3rem;
     position: absolute;
     bottom: 1.5rem;
-    right: 2.5rem;
+    right: 2rem;
     color: #aaacb4;
     padding: 0.3rem;
 }
