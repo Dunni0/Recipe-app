@@ -14,9 +14,9 @@ body{
 }
 
 .container{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pexels-cottonbro-3338497.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-cottonbro-3338497.jpg);
     width: 400px;
-    height: 80%;
+    height: 90%;
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -36,10 +36,7 @@ body{
 }
 
 h1{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    padding-top: 2rem;
+    padding-top: 5rem;
     color: #ffff;
     text-transform: capitalize;
 }
