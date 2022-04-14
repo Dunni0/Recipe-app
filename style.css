@@ -20,7 +20,7 @@ body{
     width: 400px;
     height: 100%;
     box-shadow: 0 0 10px 2px #3333331a;
-    border-radius: 13px;
+    border-radius: 13px 13px 13px 13px;
     position: absolute;
     left: 50%;
     top: 50%;
