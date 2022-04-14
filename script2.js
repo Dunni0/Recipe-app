@@ -257,7 +257,7 @@ clear.addEventListener("click", function(){
 
     mealsEl.innerHTML= "";
     searchMeal.value="";
-    
+    noMeal.style.display="none";
     goToTop();
 })
 
