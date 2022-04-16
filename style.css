@@ -39,7 +39,7 @@ body{
 }
 
 h1{
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     color: #ffff;
     text-transform: capitalize;
 }
@@ -57,7 +57,7 @@ button{
     font-size: 1rem;
     position: absolute;
     bottom: 1.5rem;
-    right: 2rem;
+    right: 1.5rem;
     color: #aaacb4;
     padding: 0.3rem;
 }
