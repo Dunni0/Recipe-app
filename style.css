@@ -40,12 +40,15 @@ body{
 
 h1{
     padding-top: 2.5rem;
+    letter-spacing: 0.1rem;
     color: #ffff;
     text-transform: capitalize;
 }
 
 p{
-   color: #caccd3;
+    font-size: small;
+    letter-spacing: 0.1rem;
+    color: #caccd3;
 }
 
 button{
