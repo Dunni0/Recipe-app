@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-cottonbro-3338497.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/pexels-karolina-grabowska-4033327.jpg);
     width: 380px;
     height: 100%;
     box-shadow: 0 0 10px 2px #3333331a;
@@ -51,9 +51,10 @@ p{
 button{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 10px;
-    box-shadow:  0 0 15px black;
+    border: none;
+    box-shadow:  0 0 5px black;
     background-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1rem;
     position: absolute;
     bottom: 1.5rem;
     right: 2rem;
