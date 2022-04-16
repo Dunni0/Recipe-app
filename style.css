@@ -61,12 +61,12 @@ button{
     position: absolute;
     bottom: 1.5rem;
     right: 1.5rem;
-    color: #aaacb4;
+    color: #caccd3;
     padding: 0.3rem;
 }
 
 button:hover{
-    background-color: #aaacb4;
+    background-color:#3a3f53;
     color: #ffff;
     cursor: pointer;
 }
