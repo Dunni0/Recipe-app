@@ -37,12 +37,15 @@ body{
     align-items: center;
     justify-content: center;
 }
+.let{
+    color: #e1e3e9;
+}
 
 h1{
     margin-top: 4rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     letter-spacing: 0.1rem;
-    color: #ffff;
+    color: #222121;
     text-transform: capitalize;
 }
 
