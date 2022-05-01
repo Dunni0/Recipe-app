@@ -37,23 +37,19 @@ body{
     align-items: center;
     justify-content: center;
 }
-.let{
-    color: #e1e3e9;
-}
 
 h1{
     margin-top: 4rem;
-    /* padding-top: 2rem; */
     letter-spacing: 0.1rem;
-    /* color: #73c2fb; */
-    color: #17181c;
+    color: #e1e3e9;
     text-transform: capitalize;
 }
 
 p{
     font-size: small;
     letter-spacing: 0.1rem;
-    color: #e1e3e9;
+    color:  #e1e3e9;
+    opacity: 0.9;
 }
 
 button{
