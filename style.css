@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pexels-lumn-604969.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pexels-daria-shevtsova-1070893.jpg);
     width: 380px;
     height: 95vh;
     box-shadow: 0 0 10px 2px #3333331a;
