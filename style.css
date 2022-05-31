@@ -70,3 +70,34 @@ button:hover{
     color: #ffff;
     cursor: pointer;
 }
+
+@media (min-width: 1024PX) {
+    body{
+        background-color: #3a3f53;
+    }
+    .Container{
+        width: 80%;
+        height: 100vh;
+        border-radius: 0;
+        background-image: url(images/pexels-ella-olsson-1640774.jpg);
+    }
+    button{
+        font-size: 1.1rem;
+        padding: 0.7rem;
+        color: #222121;
+        bottom: 1rem;
+        width: 5.5rem;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    .text{
+        margin: 12rem auto;
+    }
+    h1{
+        color: #222121;
+    }
+    p{
+        color: #222121;
+        margin-left: 1rem;
+    }
+}

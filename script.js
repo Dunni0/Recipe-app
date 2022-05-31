@@ -4,3 +4,5 @@ button.addEventListener("click", function(){
      document.location.href="index2.html";
 });
 console.log(document.getElementById("btn"))
+
+
