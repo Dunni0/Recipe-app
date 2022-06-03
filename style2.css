@@ -19,7 +19,7 @@ body{
 .title{
     text-align: center;
     text-transform: capitalize;
-    color: #3a3f53;
+    color: #17181c;
     font-size: 1.2rem;
     font-weight: bold;
     padding-top: 0.7rem;
@@ -64,7 +64,7 @@ header input{
     border-radius: 7px;
     padding: 0.5rem 1rem;
     font-family: inherit;
-    margin-left: 3.5rem;
+    margin-left: 3rem;
 }
 
 #search{
@@ -340,7 +340,7 @@ img{
 
 .footerImage{
     background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pexels-ella-olsson-1640777.jpg); 
-    height: 300px; 
+    height: 280px; 
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
