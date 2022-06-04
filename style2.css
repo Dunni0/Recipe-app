@@ -80,7 +80,7 @@ header button{
     background-color: transparent;
     color: #aaa;
     font-size: 1rem;
-    margin-left: 30px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -160,8 +160,8 @@ img{
 .meal{
     background-color: #17181c;
     box-shadow: 0 0 10px 2px #3333331a;
-    border-radius: 3px;
-    margin: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem;
     overflow: hidden;
 }
 
@@ -172,7 +172,7 @@ img{
 .mealHeader .random{
     position: absolute;
     top: 1.5rem;
-    background-color: #ece9e6;
+    background-color: #fff;
     padding: 0.25rem 0.5rem;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -364,9 +364,9 @@ img{
     }
     .moibileContainer{
         width: 60%;
-        border-radius: 0;
+        border-radius: 10px;
     }
     .mealheader img{
-        height: 570px;
+        height: 600px;
    }
 }
