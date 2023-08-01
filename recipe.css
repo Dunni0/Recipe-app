@@ -5,6 +5,7 @@
 }
 
 body{
+    padding: 1rem;
     background: #ece9e6;
     background: -moz-linear-gradient(#2e2b2b, #4e4d4d);
     background: linear-gradient to right( #555353, #222121);
@@ -62,7 +63,7 @@ header input{
     border: none;
     background-color: #ece9e6;
     border-radius: 7px;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     font-family: inherit;
     margin-left: 3rem;
 }
@@ -72,7 +73,7 @@ header input{
     top: 0;
     right: 0;
     bottom: 0;
-    padding-right: 0.5rem;
+    padding-right: 0.6rem;
 }
 
 header button{
@@ -89,9 +90,12 @@ header button:hover{
 }
 
 .favMealContainer{
-    background-color: rgb(234, 226, 238);
     padding: 0.25rem 1rem;
     text-align: center;
+    background-color: #121212;
+    color: #fff;
+    font-size: larger;
+    letter-spacing: 3px;
 }
 
 .favMeals{
@@ -220,7 +224,7 @@ img{
 }
 
 .mealBody .favBtn.active{
-    color:#3a3f53;
+    color: red;
 }
 
 .favMeals .showRecipe{
@@ -360,13 +364,17 @@ img{
 
 @media (min-width: 1024PX) {
     body{
-        background-color: #3a3f53;
+        background-color: #9ba4c9;
     }
     .moibileContainer{
-        width: 60%;
+        width: 70%;
         border-radius: 10px;
     }
     .mealheader img{
         height: 600px;
    }
+
+   header input{
+        width: 50%;
+}
 }
