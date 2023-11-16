@@ -6,15 +6,12 @@
 
 body{
     padding: 1rem;
-    background: #ece9e6;
-    background: -moz-linear-gradient(#2e2b2b, #4e4d4d);
-    background: linear-gradient to right( #555353, #222121);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    overflow-x: hidden;
 }
 
 .title{
@@ -28,14 +25,22 @@ body{
 }
 
 .moibileContainer{
-    background-color: #fff;
-    box-shadow: 0 0 10px 2px #3333331a;
+    box-shadow: 0 0 10px 15px #8f7e7e1a;
     border-radius: 10px;
-    width: 400px;
+    max-width: 100%;
+    width: 320px;
 }
 
+#icon{
+    width: 2rem;
+    height: 2rem;
+    color: #6d6d3f;
+    margin-top: 2rem;
+  }
+
+
 header{
-    padding: 1rem;
+    margin-bottom: 0.5rem;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -44,13 +49,15 @@ header{
 }
 
 .show{
-    color: #a9acb7;
-    padding-top: 0.5rem;
+    text-align: center;
+    color: orange;
+    font-size: small;
+    margin-top: 0.5rem;
     display: block;
     cursor: pointer;
 }
 
-h3{
+h1{
     padding: 1rem;
     text-transform: capitalize; 
 }
@@ -65,7 +72,7 @@ header input{
     border-radius: 7px;
     padding: 0.7rem 1rem;
     font-family: inherit;
-    margin-left: 3rem;
+    margin-left: 2.3rem;
 }
 
 #search{
@@ -92,10 +99,14 @@ header button:hover{
 .favMealContainer{
     padding: 0.25rem 1rem;
     text-align: center;
-    background-color: #121212;
-    color: #fff;
+    background-color: #bebe8d;
+    color: #6d6d3f;
     font-size: larger;
     letter-spacing: 3px;
+}
+
+.favMealContainer>h2{
+    text-transform: capitalize;
 }
 
 .favMeals{
@@ -114,6 +125,12 @@ img{
     position: relative;
     width: 75px;
     margin: 5px;
+    transition: all 400ms ease-in;
+}
+
+.favMeals li:hover{
+    cursor: pointer;
+    transform: scale(0.9);
 }
 
 .favMeals li .clear{
@@ -125,7 +142,6 @@ img{
    right: -0.3rem;
    font-size: 0.9rem;
    cursor: pointer;
-   color: #9ba4c9;
 }
 
 .favMeals li .clear:hover{
@@ -137,7 +153,7 @@ img{
 }
 
 .favMeals li img{
-    border: 2px solid white;
+    border: 2px solid #bebe8d;
     box-shadow: 0 0 10px 2px #3333331a;
     object-fit: cover;
     height: 70px;
@@ -147,7 +163,7 @@ img{
 
 .favMeals li span{
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
@@ -156,13 +172,12 @@ img{
 }
 
 .favMeals li:hover span{
+    cursor: default;
     white-space: normal;
-    overflow: auto;
-    cursor: pointer;
 }
 
 .meal{
-    background-color: #17181c;
+    background-color: #bebe8d;
     box-shadow: 0 0 10px 2px #3333331a;
     border-radius: 8px;
     margin: 2rem;
@@ -176,21 +191,23 @@ img{
 .mealHeader .random{
     position: absolute;
     top: 1.5rem;
-    background-color: #fff;
+    background: #bebe8d;
     padding: 0.25rem 0.5rem;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     font-weight: bold;
     text-transform: capitalize;
+    color: white;
 }
 
 .mealheader img{
-    height: 350px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
 }
 
 .mealBody{
+    background: orange;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,13 +215,13 @@ img{
 }
 
 .mealBody h4{
-    color: rgb(197, 188, 188) ;
+    color: white;
     display: inline-block;
     width: 100px;
 }
 
 .mealBody .favBtn{
-    color: rgb(197, 188, 188);
+    color: white;
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -212,7 +229,7 @@ img{
 }
 
 .mealBody .showRecipe{
-    color: rgb(197, 188, 188);
+    color: white;
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -220,11 +237,11 @@ img{
 }
 
 .mealBody .showRecipe:hover{
-    color: #3a3f53;
+    color: #bebe8d;
 }
 
 .mealBody .favBtn.active{
-    color: red;
+    color: #6d6d3f;
 }
 
 .favMeals .showRecipe{
@@ -244,7 +261,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #fff;
     left: 0;
     right: 0;
     top: 0;
@@ -258,10 +275,10 @@ img{
 }
 
 .mealRecipe{
-    background-color: white;
     position: relative;
-    max-width: 600px;
-    width: 100%;
+    box-shadow: 0 0 10px 15px #8f7e7e1a;
+    max-width: 550px;
+    width: 50%;
     max-height: 100vh;
     padding: 1.2rem 2rem;
     border-radius: 5px ;
@@ -275,20 +292,20 @@ img{
 .mealRecipe h1{
     text-align: center;
     padding: 0 0 1rem 0 ;
-    color: #9ba4c9;
+    color: orange;
 }
 
 .mealRecipe h3{
-    color: #9ba4c9;
+    color: orange;
     padding: 1rem 0 0.7rem 0 ;
     
 }
 
 .mealRecipe p {
+    color: #6d6d3f;
     padding-top: 0;
     text-align: justify;
-    word-spacing: 2px;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .mealRecipe ul{
@@ -309,7 +326,7 @@ img{
 }
 
 .mealRecipe .closePopup:hover{
-    color: #9ba4c9;
+    color: orange;
 }
 
 .information{
@@ -326,10 +343,11 @@ img{
 
 .appInfo{
     width: 90%;
-    color: black;
+    border-radius: 0px 7px 0 7px;
+    color: #fff;
     margin: 1rem;
     padding: 0.7rem;
-    background-color: #9ba4c9;
+    background-color: #bebe8d;
     cursor: pointer;
 }
 
@@ -338,7 +356,6 @@ img{
 }
 
 .footer{
-    background-color: #9ba4c9;
     width: 80%;
 }
 
@@ -353,8 +370,8 @@ img{
 } 
 
 .footerAbout{
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 1.2rem;
+    color: #6d6d3f;
+    padding: 0.5rem;
     font-size: small;
 }
 
@@ -363,15 +380,12 @@ img{
 }
 
 @media (min-width: 1024PX) {
-    body{
-        background-color: #9ba4c9;
-    }
     .moibileContainer{
-        width: 70%;
+        width: 500px;
         border-radius: 10px;
     }
     .mealheader img{
-        height: 600px;
+        height: 300px;
    }
 
    header input{
