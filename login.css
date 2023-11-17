@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 .loginContainer{
     /* background-color: #fff; */
     box-shadow: 0 0 10px 15px #8f7e7e1a;
