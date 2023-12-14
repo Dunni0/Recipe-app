@@ -22,6 +22,7 @@ const auth = getAuth()
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const btn = document.getElementById("signup")
+const error = document.getElementById("error")
 
 
 
@@ -30,7 +31,8 @@ btn.addEventListener('click', (e)=>{
     console.log(email.value, password.value)
 
     if(validateEmail(email)  === false|| validatePass(password) === false){
-        alert('Email or Password is out of line')
+        // alert('Email or Password is out of line')
+        error.style.display= "block"
     } else{
         window.location.href="recipe.html"
     }
