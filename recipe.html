@@ -1,93 +1,61 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="recipe.css">    
-    <title> Recipe App | What Are You Cooking Today? </title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="recipe.css" />
+    <title>Recipe App | What Are You Cooking Today?</title>
+  </head>
+  <body>
     <div class="moibileContainer">
-        <div class="title">
-           <i id="icon" class="fa-solid fa-bowl-food fa-2xl"></i>
-       </div>
-        <header>
-            <label class="input">
-              <input type="text" placeholder="search for meals" id="searchMeal">
-              <button id="search"> <i class="fas fa-search"></i></button>
-            </label>
-              <button class="clear">
-                <i class="fas fa-redo-alt"></i>
-             </button>
-             <p id="noMeal"> </p>
-        </header>
-        <div class="favMealContainer">
-            <h2> favorite meals </h2>
-            <ul class ="favMeals" id="favMeals"></ul>
+      <div class="title">
+        My Recipes <i id="icon" class="fa-solid fa-bowl-food fa-2xl"></i>
+      </div>
+      <header>
+        <label class="input">
+          <input type="text" placeholder="search for meals" id="searchMeal" />
+          <button id="search"><i class="fas fa-search"></i></button>
+        </label>
+        <button class="clear">
+          <i class="fas fa-redo-alt"></i>
+        </button>
+        <button class="onscroll"><i class="fas fa-arrow-up"></i></button>
+        <p id="noMeal"></p>
+      </header>
+      <div class="favMealContainer">
+        <h2>favorite meals</h2>
+        <ul class="favMeals" id="favMeals"></ul>
+      </div>
+      <div class="meals" id="meals"></div>
+      <div class="information">
+        <div class="footer">
+          <div class="footerImage"></div>
+          <div class="footerAbout">
+            <h1>About Me</h1>
+            <p>
+              This recipe app makes cooking simple, fun, and stress-free!
+              Whether you're feeling spontaneous or just want to try something
+              new, you'll find delicious recipes to explore. Get ready to cook
+              with ease and enjoy every bite!
+            </p>
+          </div>
         </div>
-        <div class="meals" id="meals">
-            
-        </div>
-        <div class="information">
-            <div class="appInfo" id="appInfo1">
-                  <h1> what I do? </h1>
-                <img class="appInfoImage" src="images/pexels-yente-van-eynde-2403392.jpg" alt=""/>
-                  <h2> I create original recipes for you!</h2>
-                  <p> This app sources easy and unique recipes </br>
-                      with instructions to guide you on your coooking journey. 
-                  </p>
-            </div>
-            <div class="appInfo" id="appInfo2">
-                <h1> what you get? </h1>
-                <img class="appInfoImage" src="images/pexels-daria-shevtsova-1095550.jpg" alt=""/>
-                  <h2> You choose your meals!</h2>
-                  <p> You get to pick YOUR MEAL from a variety of meals. </br>
-                      Suite your taste buds, just search!
-                 </p>
-            </div>
-            <div class="appInfo" id="appInfo3">
-                <h1> the future. </h1>
-                <img class="appInfoImage" src="images/pexels-lisa-fotios-1279330.jpg" alt=""/> 
-
-                <h2> You become your own chef! </h2>
-                <p> This has a nice ring to it, right? 
-                <p> This app will help improve your culinary skills </br>
-                    as our recipes caters to all cooking levels</br>
-                    and styles of cuisine.
-                </p>
-            </div>
-            <div class="footer">
-                <div class="footerImage">
-                </div>
-                <div class="footerAbout"> 
-                <h1> About Me </h1>
-                    <p>This is a casual recipe app that aims at making  </br>
-                    cooking easy and fun for you. If you're a spontaneous  </br>
-                    cook that just wants to try different recipes,  </br> 
-                    this would be just right for you. More updates will </br>
-                    be added to this app to increase</br>
-                    its functionality. Have fun!!</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="mealRecipeContainer hidden" id="recipePopup">
-       
-        <div id="mealRecipe" class="mealRecipe">
+      <div id="mealRecipe" class="mealRecipe">
+        <button id="closePopup" class="closePopup">
+          <i class="fas fa-times"></i>
+        </button>
 
-           <button id="closePopup" class="closePopup">
-              <i class="fas fa-times"></i>
-           </button>
-
-        <div class="mealInfo" id="mealInfo">
-        </div>
-
-       </div>
-
+        <div class="mealInfo" id="mealInfo"></div>
+      </div>
     </div>
-</body>
-<script src="recipe.js"></script>
+  </body>
+  <script src="recipe.js"></script>
 </html>

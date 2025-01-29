@@ -89,6 +89,7 @@ function addMeal(mealData, random = false) {
   const btn = meal.querySelector(".mealBody .favBtn");
   const showRecipe = meal.querySelector(".mealBody .showRecipe");
 
+
   btn.addEventListener("click", function () {
     if (btn.classList.contains("active")) {
       rmvMealFromLStorage(mealData.idMeal);
@@ -162,13 +163,14 @@ function addMealToFav(mealData) {
     src="${mealData.strMealThumb}" alt="${mealData.strMeal}">
     </img>
     <span> ${mealData.strMeal} </span>
-    <button class="clear"> <i class="fas fa-window-close"> </i> </button>
+    <button class="clear"> x </button>
     <button class="showRecipe"><i class="fas fa-scroll"></i></button>
             `;
   const btn = favMeal.querySelector(".clear");
+
   btn.addEventListener("click", function () {
     rmvMealFromLStorage(mealData.idMeal);
-
+     
     fetchFavMeals();
   });
 
@@ -227,9 +229,9 @@ function showMealInfo(mealData) {
   mealEl.innerHTML = `
     <h1> ${mealData.strMeal} </h1>
     <img src="${mealData.strMealThumb}" alt="">
-    <h3> cooking procedure </h3>
+    <h3> Cooking Procedure </h3>
     <p> ${mealData.strInstructions} </p>
-    <h3> ingredients and measurements </h3>
+    <h3> Ingredients and Measurements </h3>
     <ul>
         ${ingredients.map((ing) => `<li> ${ing} </li>`).join("")}
     </ul>
@@ -248,9 +250,9 @@ clear.addEventListener("click", function () {
   mealsEl.innerHTML = "";
   searchMeal.value = "";
   noMeal.innerHTML = "";
-  goToTop();
+goToTop();
 });
-
+  
 //-------------------------------------------------- back to top scroll func ----------------------------------------------------
 
 window.onscroll = function () {
@@ -259,18 +261,18 @@ window.onscroll = function () {
 
 function scrollFunc() {
   const btn = document.querySelector(".clear");
+  const scroll_btn = document.querySelector(".onscroll");
   if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-    searchBtn.classList.add("onscroll");
-    btn.innerHTML = `<i class="fas fa-arrow-up"></i>`;
-    btn.classList.add("onscroll");
+    scroll_btn.style.display='inline-block';
+    btn.style.display='none'
+    scroll_btn.addEventListener("click", function () {
+    goToTop()})
   } else {
-    btn.classList.remove("onscroll");
-    searchBtn.classList.remove("onscroll");
-    btn.innerHTML = `<i class="fas fa-redo-alt"></i>`;
+    btn.style.display='inline-block'
+    scroll_btn.style.display='none'
   }
 }
 
 function goToTop() {
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
